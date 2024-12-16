@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /cgi-bin
+Sitemap: https://suiswap-app.github.io/sitemap.xml

@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "suiswap",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#edefeb",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#0d0d0d"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/suiswap.svg",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://suiswap-app.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://suiswap-app.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "lhgxnpdvsc",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Suiswap™ | Home Official Site",
+        "meta_descr": "Suiswap aims to provide a unified trading and exchanging infrastructure for the entire SUI ecosystem by offering a comprehensive platform that caters to various user needs.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/suiswap.png\" alt=\"suiswap\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "ux6nKCzmBG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#edefeb"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#0d0d0d\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#0d0d0d\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Suiswap: Redefining the Decentralized Trading Experience</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the realm of decentralized finance (DeFi), the emergence of automated market makers (AMMs) has transformed how users access liquidity and trade assets. Among these innovative platforms, <a href=\"https://suiswap-app.github.io/\" class=\"text-primary\"><b>Suiswap</b></a> is making waves by providing a seamless, user-friendly experience for trading cryptocurrencies. By leveraging the power of blockchain technology, <a href=\"https://suiswap.app/app/\" class=\"text-primary\"><b>Suiswap</b></a> is redefining the decentralized trading landscape. In this blog, we will explore what Suiswap is, how it works, its unique features, and its significance in the broader DeFi ecosystem.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Suiswap?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Suiswap is a decentralized exchange (DEX) built on the Ethereum blockchain, designed to facilitate the trading of ERC-20 tokens through an automated market-making model. Unlike traditional exchanges that rely on order books, Suiswap employs liquidity pools to enable users to swap tokens directly from their wallets, ensuring a fast and efficient trading experience.<br><br><b>Key Features of Suiswap</b><br><b>1.User-Centric Interface:</b> Suiswap is designed with user experience in mind. Its intuitive interface allows users to navigate the platform easily, making it accessible to both novice and experienced traders.<br><b>2.Automated Market Making:</b> Suiswap utilizes an AMM model, allowing users to trade against liquidity pools rather than relying on an order book. This ensures that trades can be executed quickly and efficiently.<br><b>3.Liquidity Pools:</b> Users can provide liquidity by depositing token pairs into Suiswap’s liquidity pools. In return, they earn a share of the transaction fees generated by trades within those pools.<br><b>4.Yield Farming:</b> Suiswap offers yield farming opportunities, enabling users to earn additional rewards by staking their liquidity provider tokens.<br><b>5.Decentralized Governance:</b> Suiswap incorporates a governance model that allows token holders to participate in decision-making processes, ensuring that the platform evolves in alignment with the community’s interests.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Suiswap Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Automated Market Making (AMM)</b><br>Suiswap’s AMM model is a key feature that differentiates it from traditional exchanges. Instead of relying on buyers and sellers to create an order book, Suiswap uses a mathematical formula to determine prices based on the supply of assets in its liquidity pools. The most commonly used formula is the constant product formula:<br>x.y=k<br>In this formula:<br><br>𝑥 and y represent the quantities of two tokens in a liquidity pool.<br>𝑘 is a constant value, ensuring that the product of the two quantities remains the same.<br><br>This formula allows for continuous price adjustments based on supply and demand, facilitating instantaneous trades.<br><br><b>2. Liquidity Pools</b><br>Liquidity pools are central to Suiswap’s functionality. Each pool consists of a pair of tokens (e.g., ETH and USDT) that users can swap between. Users can become liquidity providers by depositing equal values of both tokens into a pool. In return, they receive liquidity tokens, which represent their share of the pool.<br><br>When trades occur, a small fee (often around 0.3%) is charged. This fee is distributed among liquidity providers based on their proportional share of the pool, incentivizing them to contribute liquidity.<br><br><b>3. Trading Process</b><br>The process of trading on Suiswap is straightforward:<br><br><b>1.Connect Wallet:</b> Users connect their Ethereum-compatible wallet (e.g., MetaMask) to the Suiswap interface.<br><b>2.Select Tokens:</b> Users choose the tokens they want to trade, specifying the amount they wish to swap.<br><b>3.Review Transaction:</b> The interface displays the estimated output amount, slippage tolerance, and any associated fees.<br><b>4.Confirm Swap:</b> Users confirm the transaction, which is executed through the underlying smart contracts.<br><b>5.Receive Tokens:</b> Once the transaction is processed, the swapped tokens are delivered directly to the user’s wallet.<br><br><b>4. Yield Farming</b><br>Suiswap offers users the opportunity to earn additional rewards through yield farming. By staking their liquidity provider tokens, users can earn Suiswap’s governance token (e.g., $SUI) or other rewards. This incentivizes users to provide liquidity and participate actively in the platform.<br><br><b>5. Governance</b><br>Suiswap incorporates a decentralized governance model, allowing token holders to participate in decision-making processes. This includes voting on proposals related to protocol upgrades, fee structures, and other critical aspects of the platform. This democratic approach fosters community engagement and ensures that the platform evolves in alignment with user needs.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Significance of Suiswap in the DeFi Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Empowering Users</b><br>Suiswap empowers users by providing them with a platform to trade and earn without relying on centralized exchanges. This democratization of access to liquidity and trading opportunities allows users to take control of their financial futures.<br><br><b>2. Enhancing Liquidity Access</b><br>By leveraging liquidity pools, Suiswap enhances access to liquidity for a wide range of tokens. This is particularly beneficial for lesser-known or newly launched tokens that may struggle to gain traction on traditional exchanges. Suiswap enables these assets to be traded directly, creating a more inclusive environment for all tokens.<br><br><b>3. Fostering Innovation</b><br>Suiswap is part of a broader trend within the DeFi space that encourages innovation and experimentation. By providing a platform for new projects to launch their tokens and facilitate trading, Suiswap contributes to the growth of the DeFi ecosystem as a whole.<br><br><b>4. Supporting Yield Generation</b><br>With its yield farming opportunities, Suiswap allows users to earn passive income by providing liquidity. This attracts a diverse range of participants, from casual investors to experienced traders, all seeking to maximize their returns in a low-risk environment.<br><br><b>5. Building Community</b><br>Suiswap's governance model fosters a sense of community among its users. By allowing token holders to participate in decision-making processes, the platform encourages collaboration and engagement. This sense of ownership can lead to a more vibrant and active ecosystem.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges Facing Suiswap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Competition</b><br>The DeFi space is highly competitive, with numerous DEXs and AMMs vying for user attention. Suiswap must continually innovate and improve its offerings to differentiate itself from competitors. This includes expanding its game library, enhancing user experience, and introducing new features.<br><br><b>2. Regulatory Scrutiny</b><br>As decentralized exchanges gain popularity, they are attracting increased regulatory scrutiny. Suiswap must navigate the complexities of compliance while maintaining its decentralized ethos and user privacy.<br><br><b>3. Security Risks</b><br>While Suiswap employs robust security measures, the risk of hacks and exploits in the DeFi space is ever-present. The platform must remain vigilant in updating its security protocols and educating users about safe trading practices to minimize risks.<br><br><b>4. Impermanent Loss</b><br>One of the primary risks associated with providing liquidity on Suiswap is impermanent loss. This occurs when the price of tokens in a liquidity pool diverges significantly from their initial price at the time of deposit. Liquidity providers may find that they would have been better off simply holding their tokens instead of providing liquidity. Understanding and managing impermanent loss is crucial for liquidity providers.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Suiswap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expansion of Supported Tokens</b><br>As Suiswap grows, expanding its library of supported tokens will be vital. By integrating more tokens and liquidity pools, Suiswap can attract a broader audience and encourage more users to engage with the platform.<br><br><b>2. Enhanced User Experience</b><br>To stay competitive, Suiswap should continue to invest in improving user experience. This could include advanced search features, personalized recommendations, and mobile app development for on-the-go trading. User feedback will be crucial in shaping these developments.<br><br><b>3. Cross-Chain Functionality</b><br>The future of decentralized finance may involve increased cross-chain compatibility. Suiswap could explore bridging to other blockchain networks, allowing users to trade assets across different ecosystems. This would enhance liquidity and create new opportunities for traders and liquidity providers.<br><br><b>4. Community Engagement Initiatives</b><br>Investing in community engagement initiatives can strengthen Suiswap's position within the DeFi ecosystem. Hosting events, educational webinars, and community challenges can enhance user involvement and create a loyal user base.<br><br><b>5. Integration of Advanced Features</b><br>As the DeFi space evolves, Suiswap may want to explore integrating advanced features such as limit orders, stop-loss orders, and advanced trading tools. These features can attract more experienced traders looking for a comprehensive trading experience.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Suiswap is at the forefront of the decentralized finance revolution, offering users a secure and user-friendly platform for trading cryptocurrencies. By leveraging an automated market-making model and providing opportunities for yield farming, Suiswap empowers users to take control of their trading experiences.<br><br>As the DeFi landscape continues to evolve, Suiswap must navigate challenges such as competition, regulatory scrutiny, and security risks. However, with a commitment to innovation and community engagement, the platform is well-positioned for future growth.<br><br>For traders, liquidity providers, and enthusiasts alike, Suiswap represents a new paradigm in decentralized trading. Its focus on user experience, security, and community involvement sets it apart in a crowded market, making it an exciting platform to watch as the DeFi ecosystem continues to flourish. Whether you are a casual trader looking for a seamless experience or a seasoned investor seeking to maximize returns, Suiswap offers a unique solution that caters to your needs in the dynamic world of decentralized finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "ux6nKPcfRB",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
